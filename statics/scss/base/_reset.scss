@@ -1,0 +1,269 @@
+@font-face {
+  font-family: proxima-nova;
+  src: url(../fonts/proxima-nova-regular.eot);
+  src: url(../fonts/proxima-nova-regular.eot#iefix) format("embedded-opentype"),url(../fonts/proxima-nova-regular.woff) format("woff"),url(../fonts/proxima-nova-regular.ttf) format("truetype"),url(../fonts/proxima-nova-regular.svg#ywftsvg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: url(../fonts/proxima-nova-semibold.eot);
+  src: url(../fonts/proxima-nova-semibold.eot#iefix) format("embedded-opentype"),url(../fonts/proxima-nova-semibold.woff) format("woff"),url(../fonts/proxima-nova-semibold.ttf) format("truetype"),url(../fonts/proxima-nova-semibold.svg#ywftsvg) format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: url(../fonts/proxima-nova-light.eot);
+  src: url(../fonts/proxima-nova-light.eot#iefix) format("embedded-opentype"),url(../fonts/proxima-nova-light.woff) format("woff"),url(../fonts/proxima-nova-light.ttf) format("truetype"),url(../fonts/proxima-nova-light.svg#ywftsvg) format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap
+}
+
+html {
+    height: 100%;
+    width: 100%
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+  color: #fff;
+  background: #000;
+}
+a,button,div,em,h1,h2,h3,h4,h5,h6,input,p,span {
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: #23527c;
+    text-decoration: underline;
+  }
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        padding-left: 48px;
+        padding-right: 48px;
+        max-width: 100%;
+    }
+}
+@-webkit-keyframes loaderAnimation {
+  0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+  }
+}
+
+@keyframes loaderAnimation {
+  0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: .7
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: .7
+  }
+}
+:root {
+    --fa-font-light:normal 300 1em/1 "Font Awesome 6 Pro";
+    --fa-font-regular:normal 400 1em/1 "Font Awesome 6 Pro";
+    --fa-font-solid:normal 900 1em/1 "Font Awesome 6 Pro";
+    --fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands";
+  }
+  
+  @font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url(../fonts/fa-light-300.woff2) format("woff2"), url(../fonts/fa-light-300.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../fonts/fa-regular-400.woff2) format("woff2"), url(../fonts/fa-regular-400.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Font Awesome 6 Pro";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(../fonts/fa-solid-900.woff2) format("woff2"), url(../fonts/fa-solid-900.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Font Awesome 6 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(../fonts/fa-brands-400.woff2) format("woff2"), url(../fonts/fa-brands-400.ttf) format("truetype");
+  }
+  .fal, .fa-light {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 300;
+  }
+  .far,.fa-regular {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 400
+  }
+  .fas,.fa-solid {
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 900
+  }
+  .fab,.fa-brands {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400
+  }
+
+.fp-h1,h1 {
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 28px;
+  margin-bottom: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .fp-h1,h1 {
+      font-size:33px;
+      line-height: 40px;
+      margin-bottom: 20px
+  }
+}
+
+.fp-h2,h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 24px;
+  margin-bottom: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .fp-h2,h2 {
+      font-size:21px;
+      line-height: 28px;
+      margin-bottom: 20px
+  }
+}
+
+.fp-h3,h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 24px;
+  margin-bottom: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .fp-h3,h3 {
+      font-size:19px;
+      line-height: 26px;
+      margin-bottom: 20px
+  }
+}
+
+.fp-h4,h4 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 22px;
+  margin-bottom: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .fp-h4,h4 {
+      font-size:16px;
+      line-height: 24px;
+      margin-bottom: 20px
+  }
+}
+
+.fp-h5,h5 {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 20px;
+  margin-bottom: 16px
+}
+
+@media screen and (min-width: 768px) {
+  .fp-h5,h5 {
+      font-size:12px;
+      line-height: 20px;
+      margin-bottom: 20px
+  }
+}
+
+  .fp-h6, h6{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px){
+      font-size: 12px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+  .fp-p, .fp-td, .fp-th, p, td, th {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.form-group:last-child, .panel:last-child, .popover ol:last-child, .popover ul:last-child, p:last-child {
+  margin-bottom: 0;
+}
+  .margin-bottom-20{
+    margin-bottom: 20px;
+  }
