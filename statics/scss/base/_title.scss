@@ -1,11 +1,8 @@
-.title_container {
-    padding-top: 60px;
-    padding-bottom: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h1,h2{
-        color: #fff;
-        font-size: 21px;
-    }
+.result_title{
+    color: #222;
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
 }
