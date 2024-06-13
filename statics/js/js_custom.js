@@ -10,6 +10,20 @@ if ($('.search_mb').length) {
     return false;
   });
 }
+if ($('.menu_mb_btn').length) {
+  $('.menu_mb_btn').click(function() {
+    $(this).toggleClass('open');
+    $('.header_menu_mb').toggleClass('active');
+    return false;
+  });
+}
+if ($('.header_menu_mb').length) {
+  $('.header_menu_mb').click(function() {
+    $('.menu_mb_btn').removeClass('open')
+    $(this).removeClass('active');
+    return false;
+  });
+}
 if ($('.slick-category').length) {
   $('.slick-category').slick({
     dots: false,
