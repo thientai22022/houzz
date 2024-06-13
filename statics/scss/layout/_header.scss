@@ -16,6 +16,22 @@
       flex-wrap: wrap;
     }
   }
+  .menu_mb_btn{
+    display: none;
+    @media(max-width: 767px){
+      display: inline-flex;
+      margin-left: -16px;
+    }
+    button {
+      color: #333;
+      padding: 14px;
+      background: transparent;
+      border: none;
+      font-size: 22px;
+      line-height: 1;
+      outline: none;
+    }
+  }
   .logo {
     display: inline-block;
     margin: 0 8px 0 -8px;
@@ -24,7 +40,9 @@
   .header_menu {
     display: inline-flex;
     margin-right: 8px;
-  
+    @media(max-width: 767px){
+      display: none;
+    }
     ul {
       display: inline-flex;
   
@@ -44,10 +62,42 @@
       }
     }
   }
-  
+  .search_mb{
+    display: none;
+    @media(max-width: 767px){
+      display: inline-flex;
+    }
+     button {
+      background: rgba(0, 0, 0, 0);
+      border: none;
+      margin: 0;
+      padding: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      height: unset;
+      border-radius: 50%;
+      color: #222;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      width: 42px;
+      &:focus{
+        outline: 1px dotted #f0eee8 !important;
+        background-color: #f0eee8 !important;
+      }
+   }
+  }
   .header_search {
     display: inline-flex;
-  
+    &.active form {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      input {
+          border-radius: unset;
+      }
+    }
     input {
       font-size: 18px;
       padding: 2.7px 10px 2.7px 36px;
@@ -87,6 +137,9 @@
   
     form {
       position: relative;
+      @media(max-width: 767px){
+        display: none;
+      }
     }
   }
   .header_my_inline {
@@ -99,7 +152,9 @@
   .sale {
     display: inline-block;
     margin-left: 16px;
-  
+    @media(max-width: 767px){
+      margin-left: 0;
+    }
     a {
       border-radius: 73px;
       padding: 0 12px;
@@ -110,6 +165,9 @@
       font-size: 18px;
       display: inline-flex;
       align-items: center;
+      @media(max-width: 767px){
+        font-size: 0;
+      }
     }
   }
   
@@ -225,6 +283,9 @@
       font-size: 18px;
       display: inline-flex;
       align-items: center;
+      @media(max-width: 767px){
+        font-size: 0;
+      }
       &:hover{
         color: #333;
         text-decoration: underline !important;
@@ -254,7 +315,10 @@
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
-  
+    @media(max-width: 767px){
+      font-size: 0;
+      margin-left: 0;
+    }
     > i {
       font-size: 16px;
       vertical-align: middle;

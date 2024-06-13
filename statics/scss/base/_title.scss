@@ -5,4 +5,7 @@
     line-height: 36px;
     font-weight: 600;
     display: inline-block;
+    @media(max-width: 767px){
+       font-size: 22px;
+      }
 }

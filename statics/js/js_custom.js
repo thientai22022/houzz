@@ -2,7 +2,14 @@ $(document).ready(function(){
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+});
+if ($('.search_mb').length) {
+  $('.search_mb').click(function() {
+    $(this).toggleClass('open');
+    $('.header_search').toggleClass('active');
+    return false;
+  });
+}
 if ($('.slick-category').length) {
   $('.slick-category').slick({
     dots: false,
@@ -38,8 +45,8 @@ if ($('.slick-category').length) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       }
     ]
