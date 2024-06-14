@@ -241,7 +241,12 @@ ul,ol{
       margin-bottom: 20px
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .col-xl-20{
+    max-width: 20%;
+    flex: 0 0 20%;
+  }
+}
   .fp-h6, h6{
     font-size: 12px;
     font-weight: 400;
