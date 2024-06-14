@@ -241,6 +241,9 @@
   }
 }
 .footer_business {
+  @media(max-width: 1024px){
+    min-width:100%;
+   }
   .container{
     @media (min-width: 1280px) {
       max-width: 1200px;
@@ -335,6 +338,9 @@
   text-align: center;
   margin-top: 20px;
   width: 147px;
+  @media(max-width: 1024px){
+    margin-bottom: 30px;
+  }
 }
 .footer-column-title {
   font-weight: bold;
